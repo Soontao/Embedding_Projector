@@ -97,7 +97,7 @@ registerStyleDomModule({
     .ink-panel {
       display: flex;
       flex-direction: column;
-      font-size: 14px;
+      font-size: 12px;
     }
 
     .ink-panel h4 {
