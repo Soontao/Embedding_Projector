@@ -1,0 +1,1 @@
+# Embedding Projector (standalone app of tensorboard)

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "noEmitOnError": false,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "target": "ES2019",
+    "module": "NodeNext",
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "NodeNext"
+  },
+  "include": [
+    "src/*.ts"
+  ],
+  "exclude": [
+    "src/*_test.ts",
+    "node_modules"
+  ]
+}
