@@ -3,8 +3,8 @@
     {
       "tensorName": "Iris",
       "tensorShape": [150, 4],
-      "tensorPath": "https://storage.googleapis.com/embedding-projector/data/iris_tensors.bytes",
-      "metadataPath": "https://storage.googleapis.com/embedding-projector/data/iris_labels.tsv"
+      "tensorPath": "./datasets/iris_tensors.bytes",
+      "metadataPath": "./datasets/iris_labels.tsv"
     },
     {
       "tensorName": "Word2Vec 10K",

@@ -22,6 +22,7 @@ module.exports = {
 			patterns: [
 				{ from: path.join(__dirname, 'public/index.html'), to: 'index.html' },
 				{ from: path.join(__dirname, 'public/standalone_projector_config.json'), to: 'standalone_projector_config.json' },
+				{ from: path.join(__dirname, 'public/datasets'), to: 'datasets' },
 			],
 		}),
 	],

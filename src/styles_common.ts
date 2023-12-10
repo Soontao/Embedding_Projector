@@ -1,3 +1,3 @@
 export const styleVariables = {
-  majorColor: "#999999",
+  majorColor: "#116965",
 };
