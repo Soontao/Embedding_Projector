@@ -7,7 +7,8 @@
     "target": "ES2019",
     "module": "NodeNext",
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "NodeNext"
+    "moduleResolution": "NodeNext",
+    "sourceMap": true
   },
   "include": [
     "src/*.ts"

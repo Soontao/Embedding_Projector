@@ -1,6 +1,12 @@
 {
   "embeddings": [
     {
+      "tensorName": "Iris",
+      "tensorShape": [150, 4],
+      "tensorPath": "https://storage.googleapis.com/embedding-projector/data/iris_tensors.bytes",
+      "metadataPath": "https://storage.googleapis.com/embedding-projector/data/iris_labels.tsv"
+    },
+    {
       "tensorName": "Word2Vec 10K",
       "tensorShape": [10000, 200],
       "tensorPath": "https://storage.googleapis.com/embedding-projector/data/word2vec_10000_200d_tensors.bytes",
@@ -22,12 +28,6 @@
         "imagePath": "https://storage.googleapis.com/embedding-projector/data/mnist_10k_sprite.png",
         "singleImageDim": [28, 28]
       }
-    },
-    {
-      "tensorName": "Iris",
-      "tensorShape": [150, 4],
-      "tensorPath": "https://storage.googleapis.com/embedding-projector/data/iris_tensors.bytes",
-      "metadataPath": "https://storage.googleapis.com/embedding-projector/data/iris_labels.tsv"
     }
   ],
   "modelCheckpointPath": "Demo datasets"
