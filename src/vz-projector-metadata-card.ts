@@ -50,7 +50,14 @@ class MetadataCard extends LegacyElementMixin(PolymerElement) {
 
       #metadata-table {
         display: table;
+        overflow-y: auto;
         padding: 8px 12px 4px;
+      }
+
+      .scrollable-container {
+        max-height: 20rem; /* Set the desired max height for scrolling */
+        overflow-y: auto;
+        display: block; /* Ensures block behavior for child elements */
       }
 
       .metadata-row {
@@ -88,12 +95,14 @@ class MetadataCard extends LegacyElementMixin(PolymerElement) {
         </div>
         <iron-collapse id="metadata-container" opened>
           <div id="metadata-table">
-            <template is="dom-repeat" items="[[metadata]]">
-              <div class="metadata-row">
-                <div class="metadata-key">[[item.key]]</div>
-                <div class="metadata-value">[[item.value]]</div>
-              </div>
-            </template>
+            <div class="scrollable-container">
+              <template is="dom-repeat" items="[[metadata]]">
+                <div class="metadata-row">
+                  <div class="metadata-key">[[item.key]]</div>
+                  <div class="metadata-value">[[item.value]]</div>
+                </div>
+              </template>
+            </div>
           </div>
         </iron-collapse>
       </div>

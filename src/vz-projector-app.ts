@@ -23,38 +23,6 @@ import './vz-projector';
 class VzProjectorApp extends PolymerElement {
   static readonly template = html`
     <style include="vz-projector-styles"></style>
-    <style>
-      #appbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 24px;
-        height: 60px;
-        color: white;
-        background: #560731;
-      }
-
-      #appbar .logo {
-        font-size: 18px;
-        font-weight: 300;
-      }
-
-      .icons {
-        display: flex;
-      }
-
-      .icons a {
-        color: white;
-      }
-
-      vz-projector {
-        height: calc(100% - 60px);
-      }
-
-      #container {
-        height: 100%;
-      }
-    </style>
 
     <div id="container">
       <div id="appbar">

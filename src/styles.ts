@@ -12,10 +12,13 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
-import {registerStyleDomModule} from './register_style_dom_module';
+import { registerStyleDomModule } from "./register_style_dom_module";
+import { styleVariables } from "./styles_common";
+
+const { majorColor } = styleVariables;
 
 registerStyleDomModule({
-  moduleName: 'vz-projector-styles',
+  moduleName: "vz-projector-styles",
   styleContent: `
     :host {
       --paper-input-container-label: {
@@ -28,6 +31,37 @@ registerStyleDomModule({
       --paper-dropdown-menu-input: {
         font-size: 14px;
       }
+    }
+
+    #appbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 60px;
+      color: white;
+      background: ${styleVariables.majorColor};
+    }
+
+    #appbar .logo {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .icons {
+      display: flex;
+    }
+
+    .icons a {
+      color: white;
+    }
+
+    vz-projector {
+      height: calc(100% - 60px);
+    }
+
+    #container {
+      height: 100%;
     }
 
     paper-button {
@@ -48,13 +82,13 @@ registerStyleDomModule({
     }
 
     paper-checkbox {
-      --paper-checkbox-checked-color: #880e4f;
+      --paper-checkbox-checked-color: ${majorColor};
     }
 
     paper-toggle-button {
-      --paper-toggle-button-checked-bar-color: #880e4f;
-      --paper-toggle-button-checked-button-color: #880e4f;
-      --paper-toggle-button-checked-ink-color: #880e4f;
+      --paper-toggle-button-checked-bar-color: ${majorColor};
+      --paper-toggle-button-checked-button-color: ${majorColor};
+      --paper-toggle-button-checked-ink-color: ${majorColor};
     }
 
     paper-icon-button {
@@ -63,7 +97,7 @@ registerStyleDomModule({
 
     paper-icon-button[active] {
       color: white;
-      background-color: #880e4f;
+      background-color: ${majorColor};
     }
 
     .slider {
