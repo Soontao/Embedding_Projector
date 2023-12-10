@@ -17,7 +17,7 @@ import '@tensorflow/tfjs-backend-webgl';
 import {KMin} from './heap';
 import * as logging from './logging';
 import * as util from './util';
-import * as vector from './vector';
+import * as vector from './vector_util';
 
 export type NearestEntry = {
   index: number;
